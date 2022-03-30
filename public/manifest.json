@@ -1,0 +1,17 @@
+{
+  "name": "Budget Tracker",
+  "short_name": "Budget Tracker",
+  "description": "A simple web application to track financial transactions (deposits and withdrawls) and is available even when network connectivity is not.",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "fingerprints": false,
+  "inject": false,
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
