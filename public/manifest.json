@@ -1,7 +1,7 @@
 {
   "name": "Budget Tracker 2022",
   "short_name": "Budget Tracker 2022",
-  "description": "Budget Tracker 2022 is a simple web application to track financial transactions (deposits and withdrawls) and is available even when network connectivity is not.",
+  "description": "Budget Tracker 2022 is a simple web application to track financial transactions (deposits and withdrawals) and is available even when network connectivity is not. Transactions are stored in a MongoDB database (NoSQL) when you are online, but in the event you do't have connectivity, a service worker and IndexedDB make sure that uou can keep using the app and logging transactions. Once you are back online, your transactions are automatically submitted to the database.",
   "icons": [
     {
       "src": "assets/images/icons/icon-72x72.png",

@@ -1,9 +1,11 @@
 # [Budget Tracker 2022](#title)
 ​
 ## [Description](#description)
-Budget Tracker 2022 is a simple web application to track financial transactions (deposits and withdrawls) and is available even when network connectivity is not. Transactions are stored in a MongoDB database (NoSQL) when you are online, but in the event you do't have connectivity, a service worker and indexDB make sure that uou can keep using the app and logging transactions. Once you are back oline, your transactions are automatically submitted to the database.
+Budget Tracker 2022 is a simple web application to track financial transactions (deposits and withdrawals) and is available even when network connectivity is not. Transactions are stored in a MongoDB database (NoSQL) when you are online, but in the event you do't have connectivity, a service worker and IndexedDB make sure that uou can keep using the app and logging transactions. Once you are back online, your transactions are automatically submitted to the database.
 
 >> - Deployed Application URL: https://budget-2022.herokuapp.com/
+
+>> ![Budget Tracker 2022 Heroku Deployment](/public/images/heroku2.png)
 
 ![Repository Size](https://img.shields.io/github/repo-size/bkfleet1/budget-tracker-2022?style=plastic)
 >> - Project Repository URL: https://github.com/bkfleet1/budget-tracker-2022
@@ -63,7 +65,7 @@ The following steps are required to execute the **Budget Tracker 2022** applicat
 
 
 ## [Use Instructions](#usage)
-After the installation process, you are ready start the application server powered by Express. Just open the project in a terminal application, such as git bash, and type "**npm start**" and press enter. Your initialized application server should resemble the image below.
+After the installation process, you are ready start the application server powered by Express. Just open the project in a terminal application, such as git bash, and type "**npm start**" and press enter. Your initialized application server should resemble the image below. Note: The application is configured to run on port 7001 locally, which is set in the server.js file line 6. This can be modified, if desired. 
 
 ![Start Express Server](./images/express.png)
 
@@ -73,12 +75,30 @@ The application will create the **budget** database in MongoDB, which includes a
 
 ![MongoDB Atlas - Cloud Deployment](./images/mongodb2.png)
 
+Once the Express Server is started, you can launch the application and begin entering transactions as illustrated below. Note that ypu do not need to include **$**, **-**, **+** characters in the **transaction amount** field - just enter the dollar amount (e.g., 2.53). User the **Add Funds** button for a deposit and **Subtract Funds** for an expense or withdrawal. You can also include a brief description of the transaction in the **transaction name** field.
 
+![Budget Tracker 2022 UI](/public/images/heroku1.png)
+
+### Offline Features
+As previously noted, the application will continue to run, even if Internet or network connectivity is unavailable. The is achieved by using a **service worker** to cache critical application files and **IndexedDB** to store user transactions. The images below illustrate these features:
+
+**Installed and Activated Worker Service**
+
+![Installed and Activated Worker Service](/public/images/worker1.png)
+
+**Essential Application Files Cached by Worker Service**
+
+![Essential Application Files Cached by Worker Service](/public/images/worker2.png)
+
+**Offline Transactions Stored by IndexedDB**
+
+![Offline Transactions Stored by IndexDB](/public/images/indexedDb.png)
 
 
 ## [Tests](#tests)
 No formal testing is available. 
 ​
+
 ## [Questions](#questions)
 Please email the develop with any questions.
 
