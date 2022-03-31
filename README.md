@@ -42,7 +42,7 @@ The following packages & libraries were used in the development of this project.
 
 
 ## [Tech Stack](#stack)
-![80.4% Javascript](https://img.shields.io/badge/javascript-80.4%25-blue) ![14.9% HTML5](https://img.shields.io/badge/HTML5-14.9%25-blue) ![4.7% CSS](https://img.shields.io/badge/CSS-4.7%25-blue)
+![80.3% Javascript](https://img.shields.io/badge/javascript-80.4%25-blue) ![15.0% HTML5](https://img.shields.io/badge/HTML5-15.0%25-blue) ![4.7% CSS](https://img.shields.io/badge/CSS-4.7%25-blue)
 
 > - HTML5
 > - JavaScript
