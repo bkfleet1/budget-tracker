@@ -1,7 +1,7 @@
 {
-  "name": "Budget Tracker",
-  "short_name": "Budget Tracker",
-  "description": "A simple web application to track financial transactions (deposits and withdrawls) and is available even when network connectivity is not.",
+  "name": "Budget Tracker 2022",
+  "short_name": "Budget Tracker 2022",
+  "description": "Budget Tracker 2022 is a simple web application to track financial transactions (deposits and withdrawls) and is available even when network connectivity is not.",
   "icons": [
     {
       "src": "assets/images/icons/icon-72x72.png",

@@ -1,7 +1,7 @@
 {
-  "name": "budget-app",
+  "name": "budget-tracker-2022",
   "version": "1.0.0",
-  "description": "",
+  "description": "Budget Tracker 2022 is a simple web application to track financial transactions (deposits and withdrawls) and is available even when network connectivity is not.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
