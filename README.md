@@ -5,7 +5,7 @@ Budget Tracker 2022 is a simple web application to track financial transactions 
 
 >> - Deployed Application URL: https://budget-2022.herokuapp.com/
 
->> ![Budget Tracker 2022 Heroku Deployment](/public/images/heroku2.png)
+>> ![Budget Tracker 2022 Heroku Deployment](/public/images/heroku1.png)
 
 ![Repository Size](https://img.shields.io/github/repo-size/bkfleet1/budget-tracker-2022?style=plastic)
 >> - Project Repository URL: https://github.com/bkfleet1/budget-tracker-2022
@@ -60,24 +60,24 @@ NOTE: This application requires Node.js (version ^16.14.2) and MongoDB. You can 
 > * [MongoDB Atlas - Cloud Deployment](https://www.mongodb.com/cloud/atlas/register2) - https://www.mongodb.com/cloud/atlas/register2
 
 The following steps are required to execute the **Budget Tracker 2022** application.
-> 1. Clone the repository located at: https://github.com/bkfleet1/social-network.
+> 1. Clone the repository located at: https://github.com/bkfleet1/budget-tracker-2022.
 > 2. Open the project in a terminal application, such as git bash, and install NPM. To install **npm**, **Compression**, **Express**, **Mongoose**, and **Morgan** dependencies, simply type **npm install** and press enter. 
 
 
 ## [Use Instructions](#usage)
 After the installation process, you are ready start the application server powered by Express. Just open the project in a terminal application, such as git bash, and type "**npm start**" and press enter. Your initialized application server should resemble the image below. Note: The application is configured to run on port 7001 locally, which is set in the server.js file line 6. This can be modified, if desired. 
 
-![Start Express Server](./images/express.png)
+![Start Express Server](/public/images/express.png)
 
 The application will create the **budget** database in MongoDB, which includes a single collection named **transactions**. The images below illustrate the the application's database running both locally using MongoDB (version ^5.0.6) as well MongoDB Atlas (cloud version ^5.0.6).
 
-![MongoDB Community - Local Deployment](./images/mongodb1.png)
+![MongoDB Community - Local Deployment](/public/images/mongodb1.png)
 
-![MongoDB Atlas - Cloud Deployment](./images/mongodb2.png)
+![MongoDB Atlas - Cloud Deployment](/public/images/mongodb2.png)
 
 Once the Express Server is started, you can launch the application and begin entering transactions as illustrated below. Note that ypu do not need to include **$**, **-**, **+** characters in the **transaction amount** field - just enter the dollar amount (e.g., 2.53). User the **Add Funds** button for a deposit and **Subtract Funds** for an expense or withdrawal. You can also include a brief description of the transaction in the **transaction name** field.
 
-![Budget Tracker 2022 UI](/public/images/heroku1.png)
+![Budget Tracker 2022 UI](/public/images/heroku2.png)
 
 ### Offline Features
 As previously noted, the application will continue to run, even if Internet or network connectivity is unavailable. The is achieved by using a **service worker** to cache critical application files and **IndexedDB** to store user transactions. The images below illustrate these features:
@@ -92,7 +92,7 @@ As previously noted, the application will continue to run, even if Internet or n
 
 **Offline Transactions Stored by IndexedDB**
 
-![Offline Transactions Stored by IndexDB](/public/images/indexedDb.png)
+![Offline Transactions Stored by IndexDB](/public/images/indexedDB.png)
 
 
 ## [Tests](#tests)
